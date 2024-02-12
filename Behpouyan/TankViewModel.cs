@@ -56,10 +56,11 @@ namespace Behpouyan
         }
 
 
+
         public TankViewModel()
         {
             _context = new TankContext("Tank");
-            _tank = _context.tanks.Find(3);
+            _tank = _context.tanks.Find(1);
         }
 
         public event PropertyChangedEventHandler PropertyChanged;

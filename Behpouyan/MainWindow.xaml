@@ -10,7 +10,17 @@
         <Rectangle x:Name="Tank"
            Width="100"
            Height="{Binding Value}"
-           Fill="{Binding Color}" />
+           Fill="{Binding Color}" >
+
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="10"
+                                  ShadowDepth="3"
+                                  Opacity="0.8"
+                                  Color="{Binding Color}">
+                    
+                </DropShadowEffect>
+            </Rectangle.Effect>
+        </Rectangle>
 
         <Label Content="{Binding Value}" VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
